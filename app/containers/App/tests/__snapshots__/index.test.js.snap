@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should render and match the snapshot 1`] = `
+<ForwardRef>
+  <HelmetWrapper
+    defaultTitle="React-autocomplete dropdown"
+    defer={true}
+    encodeSpecialCharacters={true}
+    titleTemplate="%s - React-autocomplete dropdown"
+  >
+    <meta
+      content="A React-autocomplete dropdown application"
+      name="description"
+    />
+  </HelmetWrapper>
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/"
+    />
+  </Switch>
+  <GlobalStyleComponent />
+</ForwardRef>
+`;

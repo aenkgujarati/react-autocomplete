@@ -1,0 +1,7 @@
+{
+  "containers.HomePage.start_project.header": "Start your next react project in seconds",
+  "containers.HomePage.start_project.message": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
+  "containers.HomePage.tryme.atPrefix": "@",
+  "containers.HomePage.tryme.header": "Try me!",
+  "containers.HomePage.tryme.message": "Show Github repositories by"
+}

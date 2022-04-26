@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RepoListItem /> should render a ListItem 1`] = `
+<li
+  class="Wrapper-gm0wbu-0 PRgWh"
+>
+  <div
+    class="Item-jon90-0 kSPCtP"
+  >
+    <div
+      class="Wrapper-sc-1oo3ywq-0 egmann"
+    >
+      <a
+        class="A-sc-7tjqaa-0 RepoLink-sc-1ie8r3m-0 kzLBNS"
+        href="https://github.com/react-boilerplate/react-boilerplate"
+        target="_blank"
+      >
+        <div
+          class="IssueIconWrapper-e6t087-0 hwZbFl"
+        >
+          <svg
+            class="IssueIcon-sc-1yhyhs5-0 fkKjdI"
+            height="1em"
+            width="0.875em"
+          >
+            <path
+              d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7S10.14 13.7 7 13.7 1.3 11.14 1.3 8s2.56-5.7 5.7-5.7m0-1.3C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7S10.86 1 7 1z m1 3H6v5h2V4z m0 6H6v2h2V10z"
+            />
+          </svg>
+        </div>
+        <div>
+          <div>
+            aenkgujarati/react-boilerplate
+          </div>
+          <div>
+            <span>
+              20
+            </span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</li>
+`;
