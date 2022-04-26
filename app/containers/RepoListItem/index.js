@@ -8,36 +8,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import { FormattedNumber } from 'react-intl';
 
-import { makeSelectCurrentUser } from 'containers/App/selectors';
 import ListItem from 'components/ListItem';
-import IssueIcon from './IssueIcon';
 import IssueIconWrapper from './IssueIconWrapper';
 import RepoLink from './RepoLink';
 import Wrapper from './Wrapper';
 
 export function RepoListItem(props) {
   const { item } = props;
-  let nameprefix = '';
-
-  // If the repository is owned by a different person than we got the data for
-  // it's a fork and we should show the name of the owner
-  if (item.owner.login !== props.currentUser) {
-    nameprefix = `${item.owner.login}/`;
-  }
 
   // Put together the content of the repository
   const content = (
     <Wrapper>
       <RepoLink href={item.html_url} target="_blank">
         <IssueIconWrapper>
-          <IssueIcon />
+          <img src={item.avatar_url} alt={item.login} />
         </IssueIconWrapper>
         <div>
-          <div>{nameprefix + item.name}</div>
+          <div>{item.login}</div>
           <div>
-            <FormattedNumber value={item.open_issues_count} />
+            <div>{item.type}</div>
           </div>
         </div>
       </RepoLink>
@@ -50,11 +40,6 @@ export function RepoListItem(props) {
 
 RepoListItem.propTypes = {
   item: PropTypes.object,
-  currentUser: PropTypes.string,
 };
 
-export default connect(
-  createStructuredSelector({
-    currentUser: makeSelectCurrentUser(),
-  }),
-)(RepoListItem);
+export default connect(createStructuredSelector({}))(RepoListItem);

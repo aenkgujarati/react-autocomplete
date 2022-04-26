@@ -31,7 +31,7 @@ const appReducer = (state = initialState, action) =>
         break;
 
       case LOAD_REPOS_SUCCESS:
-        draft.userData.repositories = action.repos;
+        draft.userData.repositories = action.repos.items;
         draft.loading = false;
         draft.currentUser = action.username;
         break;
